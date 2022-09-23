@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.dmrot.dominiccue.amtechtimesapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Hospitals"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+<!--        <meta-data-->
+<!--            android:name="com.google.android.maps.v2..API_KEY"-->
+<!--            android:value="AIzaSyBt7_eLLSV66gAbwMPvv8bqp5b9QklPYzc" />-->
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyAVjNR_uL0UmdVVHifZ9Yv7NEa1qbmfV3s" />
+
+        <activity android:name=".MainActivity"
+            android:windowSoftInputMode="adjustPan" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".TaskMainActivity"/>
+        <activity android:name=".mapstutorial.MapsActivity"/>
+
+    </application>
+
+</manifest>
